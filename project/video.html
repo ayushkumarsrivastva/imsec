@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="video.css">
+
+    </head>
+    <body>
+        
+    <div class=container>
+        <h1>video</h1>
+<div class="row">
+    <div class="col">
+        <div class=feature>
+            <img src=atul.jpg width=100%>
+            <img src=play.png class=play-btn onclick="play('vid1.mp4')">
+        </div>
+    </div>
+    <div class=col>
+
+        <div class=small>
+          <div class=small-img>
+            <img src=atul.jpg>
+            <img src=play.png class=play-btn onclick="play('vid1.mp4')">
+        </div>
+        <p>mutiple<br></p>
+       
+          </div>
+          <div class=small>
+            <div class=small-img>
+              <img src=atul.jpg>
+              <img src=play.png class=play-btn onclick="play('vid1.mp4')">
+          </div>
+          <p>mutiple<br></p>
+         
+            </div> <div class=small>
+                <div class=small-img>
+                  <img src=atul.jpg>
+                  <img src=play.png class=play-btn onclick="play('vid1.mp4')">
+              </div>
+              <p>mutiple<br></p>
+             
+                </div>
+    </div>
+   </div>
+
+</div>
+<div class=video-player id=player>
+    <video width="100%" controls autoplay id=myvideo>
+        <source src=vid1.mp4 type="video/mp4">
+    </video>
+    <img src=close.png class=close onclick="stop()">
+</div>
+
+<script>
+var player=document.getElementById("player");
+var myvideo=document.getElementById("myvideo");
+function stop()
+{
+    player.style.display="none";
+}
+function play(a)
+{
+    myvideo.src=a;
+     palyer.style.display="block";
+}
+</script>
+    </body>
+</html>
